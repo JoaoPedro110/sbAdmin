@@ -1,6 +1,6 @@
 <?php
 
-require_once "./models/Pessoa.php";
+require_once "./models/pessoa.php";
 
 class PessoaController {
     protected $model;
@@ -11,6 +11,6 @@ class PessoaController {
 
     function selectAll() {
         $result = $this->model->selectAll();
-        var_dump($result);
+        require("./views/pessoaList.php");
     }
 }

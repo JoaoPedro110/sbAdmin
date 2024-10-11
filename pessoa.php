@@ -9,7 +9,7 @@ if(isset($_GET["action"])) {
     $action = $_GET["action"];
 }
 
-// Ações
-if($action == 'listar') {
+//AÇÕES
+if($action == "listar") {
     $controller->selectAll();
 }
